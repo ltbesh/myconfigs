@@ -1,6 +1,7 @@
 [user]
-email = lucas.tine-beres@oscaro.com
-name = ltbesh@oscaro
+	name = Lucas Tine-Beres
+	email = lucastineberes@gmail.com
+
 [alias]
 st = status
 rmall = ls-files --deleted | xargs git rm
@@ -20,3 +21,9 @@ branch = auto
 interactive = auto
 ui = true
 pager = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[core]
+	editor = vim
